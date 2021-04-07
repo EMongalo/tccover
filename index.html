@@ -3,23 +3,50 @@
 
 <head>
 <link rel="stylesheet" type="text/css" href="css/main.css">
+<script type="text/javascript" src="js/functions.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Transactional Capital</title>
 </head>
 
 <body style="text-align:center">
 	<div class="full-height">
-		<div class="topnav" id="navbar">
-			<a href="#home"><img src="images/logo.png" alt=""></a>
-			<div class="topnav-right">
-				<a href="#home" class="active">Home</a>
-				<a href="#contact">Contact us</a>
+		<div class="topnav mobileView" id="navbar">
+			<a href="index.html"><img src="images/logo.png" alt=""></a>
+			<div class="topnav-right mobileView">
+				<a href="index.html" class="active">Home</a>
+				<a href="contact.html">Contact us</a>
 				<a href="#faq">FAQ</a>
 				<a href="#products">Products</a>
 				<a href="#sign">Sign IN</a>
 			</div>
 		</div>
+		<div class="mobileNav desktopView">
+  			<a href="index.html" class="alignL"><img src="images/logoSmall.png" alt=""></a>
+  			<div id="myLinks" class="mobileNavPosition marginBottom20px">
+    			<a href="index.html">Home</a>
+    			<a href="contact.html">Contact us</a>
+    			<a href="#about">FAQ</a>
+    			<a href="#about">Products</a>
+    			<a href="#about">Sign IN</a>
+  			</div>
+  			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    			<img src="images/iconmenu.png" alt="">
+    		</a>
+		</div>
+		<div class="stickyMessage mobileView">
+			<div class="clearfix bodyContainer">
+				<div class="box60 alignR paddingBottom20px paddingTop20px">
+					<span>
+						We believe that a funeral is a chance to honour and celebrate a life well-lived.<br>
+						Get a Funeral Cover that has no waiting period for accidental death.
+					</span>
+				</div>
+				<div class="box40 alignL paddingBottom20px paddingTop20px"><button class="primaryButton roundedCorners">Get quote</button></div>
+			</div>
+		</div>
+		<div class="paddingTop100px"></div>
 		<div class="clearfix">
-			<div class="boxes2"></div>
+			<div class="boxes2 mobileView"></div>
 			<div class="boxes2 alignL coverText">
 				<img src="images/icon.png" alt="">
 				<h1>Funeral Cover from R 30.00 PM</h1>
@@ -29,8 +56,10 @@
 					<li>No unexpected premium increase</li>
 					<li>Tailored for you</li>
 				</ul>
-				<button class="primaryButton">Get quote</button> <strong>or</strong> <button class="secondayButton">Request a call back</button><br>
-				<small>Terms and Conditions and Billing Information</small>
+				<div class="mobileAlignC">
+					<button class="primaryButton roundedCorners mobileMargin10px">Get quote</button> <br class="desktopView"><strong>or</strong><br class="desktopView"> <button class="secondayButton roundedCorners mobileMargin10px">Request a call back</button><br>
+					<small>Terms and Conditions and Billing Information</small>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -38,9 +67,9 @@
 		<div class="clearfix">
 			<div class="box60 alignL">
 				<h2>The low-cost, flexible funeral plan</h2>
-				<p>We believe that a funeral is a chance to honour and celebrate a life well-lived. It’s why we have created a funeral plan that gives you flexibility to choose what’s important to you and your loved ones, at a price that you can afford.</p>
+				<p class="coverText marginTop50px">We believe that a funeral is a chance to honour and celebrate a life well-lived. It’s why we have created a funeral plan that gives you flexibility to choose what’s important to you and your loved ones, at a price that you can afford.</p>
 			</div>
-			<div class="box40"><img src="images/funeralsmall.png" alt=""></div>
+			<div class="box40 mobileView"><img src="images/funeralsmall.png" alt=""></div>
 		</div>
 		<h2 class="padding30px alignL">Funeral Cover Features</h2>
 		<div class="clearfix">
@@ -59,53 +88,121 @@
 		</div>
 		<h2 class="padding30px alignL">Get a flexible funeral plan to suit your needs</h2>
 		<div class="clearfix">
-			<div class="boxes3">
+			<div class="boxes3 mobileView padding15px">
 				<img src="images/gadgetSmall.png" class="padding30px" alt="">
 			</div>
-			<div class="boxes3 alignL">
+			<div class="boxes3 alignL padding15px">
 				<strong>Start a quote</strong><br><br><br>
-				First name<br>
-				<input type="text" class="inputBox">
-				Age<br>
-				<input type="text" class="inputBox">
-				What's your cell phone number?<br>
-				<input type="text" class="inputBox">
+				<input type="text" placeholder="First name" class="inputBox softCorners">
+				<input type="text" placeholder="Age" class="inputBox softCorners">
+				<input type="text" placeholder="Cellphone number" class="inputBox softCorners">
 			</div>
-			<div class="boxes3 alignL"><br><br><br>
-				Last name<br>
-				<input type="text" class="inputBox">
+			<div class="boxes3 alignL padding15px"><br class="mobileView"><br class="mobileView"><br class="mobileView">
+				<input type="text" placeholder="Last name" class="inputBox softCorners">
 				What is your gender?<br>
-				<input type="radio" name="gender" style="margin-bottom:40px"> Male <input type="radio" name="gender" style="margin-left:20px"> Female<br>  
-				How much cover would you like?<br>
-				<select class="inputBox">
+				<input type="radio" name="gender" style="margin-bottom:20px"> Male <input type="radio" name="gender" style="margin-left:20px"> Female<br>  
+				<select class="inputBox softCorners">
 					<option>Please select a cover amount</option>
 					<option>R 10 000</option>
 					<option>R 20 000</option>
 					<option>R 30 000</option>
 					<option>R 40 000</option>
 					<option>R 50 000</option>
-				</select>  
-				<button class="primaryButton">Start quote</button><br>
-				<small>Terms and Conditions and Billing Information</small>
-
+				</select> 
+				<div class="alignR">
+					<button class="primaryButton roundedCorners">Start quote</button><br>
+					<small>Terms and Conditions and Billing Information</small>
+				</div> 
 			</div>
 		</div>
-
+		<h2 class="padding30px alignL">Claims - we are here for you when it really matters</h2>
+		<div class="clearfix">
+			<div class="box60 alignL coverText paddingBottom10px">
+				<p class="marginBottom20px">
+					We understand that you need us most when things go wrong. It's why we're committed to making the claims process as quick and easy as possible. Choose our online options or speak to one of our claims advisors on 0860 123 456. Either way, we're ready to serve you as best we can.
+				</p>
+				<strong>Have the following documents to claim:</strong>
+				<ul class="marginLeft-18px marginTop0px marginBottom20px">
+					<li>Claimant ID documents</li>
+					<li>ID document for member/dependent being claimed for</li>
+					<li>Death certificate</li>
+				</ul>
+			</div>
+			<div class="box40 alignL">
+				<div class="padding30px secondaryBlock marginBottom20px paddingBottom10px softCorners">
+					<strong>Important Contact Information:</strong>
+					<p class="marginBottom20px marginTop20px">For quote related queries please contact us on 0860 111 222 or sales@tccover.co.za</p>
+					<p class="marginBottom20px marginTop20px">For claim related queries please contact us on 0860 123 456 or claims@tccover.co.za</p>
+					<p>For any changes to your policy call us on 0860 000 000 or email us at customerservice@tccover.co.za.</p>
+				</div>
+				<div class="padding30px secondaryBlock pointer softCorners">
+					<strong>You have a claim?</strong> Click to submit claim
+				</div>
+			</div>
+		</div>
+		<h3 class="coverText"><strong>Keeping the claims process as simple as possible</strong></h3>
+		<div class="clearfix marginBottom20px">
+			<div class="boxes3 paddingTop10px">
+				<h2 class="coverText">1</h2>
+				<h2 class="coverText">Where to begin</h2>
+				<p>Start your claim via our website. Or simply contact us on 0860 123 456 or claims@tccover.co.za. We're ready to help out. </p>
+			</div>
+			<div class="boxes3 paddingTop10px">
+				<h2 class="coverText">2</h2>
+				<h2 class="coverText">Stay up to date</h2>
+				<p>You can stay on top of the entire process. Your allocated claims advisor can also be your point of contact.</p>
+			</div>
+			<div class="boxes3 paddingTop10px">
+				<h2 class="coverText">3</h2>
+				<h2 class="coverText">Payout into your account</h2>
+				<p>Payment will be processed within 48Hours to complete your claim.</p>
+			</div>
+		</div>
 	</div>
-	
+	<div class="footer1 paddingBottom10px">
+		<div class="bodyContainer">
+			<div class="clearfix marginBottom20px">
+				<div class="smallBoxes3"></div>
+				<div class="bigBoxes3 paddingTop10px alignL">
+					<h2 class="alignC padding30px colorWhite">Newsletter</h2>
+					<p>Keep up with our always upcoming news and updates. Enter your e-mail and subscribe to our newsletter.</p>
+					<input type="text" placeholder="Email address" class="inputBox marginTop50px softCorners">
+					<button class="primaryButton roundedCorners">SUBSCRIBE</button>
+				</div>
+				<div class="smallBoxes3"></div>
+			</div>	
+		</div>
+	</div>
+	<div class="footer2 paddingBottom10px">
+		<div class="bodyContainer">
+			<div class="clearfix marginBottom20px">
+				<div class="box60 alignL">
+					<strong class="coverText">Quick Links</strong>
+					<hr>
+					<div class="clearfix">
+						<div class="box40 alignL padding0px marginTop20px">
+							<span><a href="#" class="colorWhite">Our Products</a></span><br><br>
+							<span><a href="#" class="colorWhite">Contact Us</a></span><br><br>
+							<span><a href="#" class="colorWhite">Subscribe</a></span><br><br>
+							<span><a href="#" class="colorWhite">Unsubscribe</a></span>
+						</div>
+						<div class="box60 alignL padding0px marginTop20px">
+							<span><a href="#" class="colorWhite">Covers</a></span><br><br>
+							<span><a href="#" class="colorWhite">Terms and Conditions</a></span>						
+						</div>
+					</div>
+				</div>
+				<div class="box40 alignL">
+					<strong class="coverText">Contact Information</strong>
+					<hr>
+					<div class="marginTop20px">
+						342 Jan Smuts Avenue<br>
+						Hyde Park , 2196
+					</div>
+				</div>
+			</div>	
+			<div class="paddingTop100px"></div>
+		</div>
+	</div>
 </body>
-<script type="script">
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
 </html>

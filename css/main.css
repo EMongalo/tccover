@@ -1,4 +1,7 @@
-﻿html, body {
+﻿/****************************************
+				Base
+****************************************/
+html, body {
   height: 100%;
   margin: 0;
 }
@@ -14,6 +17,9 @@ h1{
 	color: #0079C0;
 	margin-top:10px;
 	margin-bottom:10px;
+}
+hr{
+	color:#676D75;
 }
 
 h2{
@@ -32,21 +38,46 @@ small{
 	
 }
 
+ul{
+	margin-top:70px;
+	margin-bottom:80px;
+}
+li{
+	padding-top:25px;
+}
+
 .bodyContainer{
 	max-width: 1200px;
 	margin: auto;
 	width: 70%;	
 }
-
-.inputBox{
-	width: 100%;
-	margin-bottom:15px;
-	padding:10px;	
+.coverText{
+	font-size: 22px;
+	font-weight:lighter;
 }
 
+
+.pointer{
+	cursor:pointer;
+}
+
+.colorWhite{
+	color: #ffffff;
+	text-decoration:none;
+}
+.desktopView{
+	display:none;
+}
+
+/****************************************
+		Navigation and sections
+****************************************/
 .topnav {
   overflow: hidden;
   background-color: #323A45;
+  position: fixed;
+  top:0;
+  width:100%;
 }
 
 .topnav a {
@@ -73,11 +104,27 @@ small{
   margin-top:25px;
 }
 
-.full-height {
-  height: 100%;
-  background-image:url('../images/freelancer_transparent.png');
-  background-repeat:no-repeat;
-  background-position:left center;
+.topnav #myLinks {
+  display: none;
+}
+
+.stickyMessage {
+  overflow: hidden;
+  background-color: #CEE7F4;
+  position: fixed;
+  bottom:0;
+  width:100%;
+}
+
+.footer1 {
+  background-color: #3E6A8D;
+  color: #ffffff;
+  text-align:center;
+}
+
+.footer2 {
+  background-color: #323A45;
+  color: #ffffff;
 }
 
 .imageBG {
@@ -85,29 +132,82 @@ small{
   background-image:url('../images/funeral2.png');
   background-repeat:no-repeat;
 }
-.full-height2 {
-  background: red;
-}
+
 .menuItem{
 	text-align:right;
 	width:80%;
 }
+
 .logoItem{
 	text-align:left;
 }
+
+/****************************************
+			Buttons and spacing
+****************************************/
+.inputBox{
+	width: 100%;
+	margin-bottom:15px;
+	padding:10px;	
+	border:2px #CEE7F4 solid;
+}
+
+.full-height {
+  height: 100%;
+  background-image:url('../images/freelancer_transparent.png');
+  background-repeat:no-repeat;
+  background-position:left center;
+}
+
+.primaryButton{
+	background-color: #0079C0;
+	color: #ffffff;
+	width:200px;
+	padding:10px;
+	font-size:14px;
+	border:0;
+}
+
+.secondayButton{
+	background-color: #CEE7F4;
+	color: #0079C0;
+	width:200px;
+	padding:10px;
+	font-size:14px;
+	border:0;
+}
+
+.roundedCorners{
+  border-radius: 10px;
+}
+
+.softCorners{
+  border-radius: 5px;
+}
+
+.secondaryBlock{
+	background-color: #CEE7F4;
+	color: #0079C0;
+	font-size:14px;
+	border:0;
+}
+
+/****************************************
+			Miscellaneous
+****************************************/
 * {
   box-sizing: border-box;
 }
 
 .box60 {
   float: left;
-  width: 60%;
+  width: 59%;
   padding: 30px;
 }
 
 .box40 {
   float: left;
-  width: 40%;
+  width: 39%;
   padding: 30px;
 }
 
@@ -117,13 +217,33 @@ small{
   padding: 50px;
 }
 
+.boxes3 {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+}
+
+.bigBoxes3 {
+  float: left;
+  width: 50%;
+  padding: 50px;
+}
+
 .padding30px {
   padding: 30px;
 }
 
-.boxes3 {
+.paddingBottom10px {
+  padding-bottom: 10px;
+}
+
+.paddingTop10px {
+  padding-top: 10px;
+}
+
+.smallBoxes3 {
   float: left;
-  width: 33.33%;
+  width: 25%;
   padding: 50px;
 }
 
@@ -135,76 +255,157 @@ small{
  .alignL{
 	text-align:left;
 }
-
-.coverText{
-	font-size: 22px;
-	font-weight:lighter;
+ .alignR{
+	text-align:right;
 }
+ .alignC{
+	text-align:center;
+}
+
+.padding0px{
+	padding:0px;
+}
+
+.padding15px{
+	padding:15px;
+}
+
 .marginLeft-18px{
 	margin-left:-18px;
 }
-ul{
-	margin-top:70px;
-	margin-bottom:80px;
+
+.marginRight15px{
+	margin-right:15px;
 }
-li{
-	padding-top:25px;
+
+.marginRight5px{
+	margin-right:5px;
 }
-.primaryButton{
-	background-color: #0079C0;
-	color: #ffffff;
-	width:250px;
-	padding:20px;
-	font-size:14px;
-	border:0;
+
+.marginLeft5px{
+	margin-left:5px;
 }
-.secondayButton{
-	background-color: #CEE7F4;
-	color: #0079C0;
-	width:250px;
-	padding:20px;
-	font-size:14px;
-	border:0;
+
+.marginBottom20px{
+	margin-bottom:20px;
+}
+
+.marginTop20px{
+	margin-top:20px;
+}
+
+.marginTop50px{
+	margin-top:50px;
+}
+
+.paddingTop100px{
+	padding-top:100px;
+}
+
+.marginTop0px{
+	margin-top:0px;
+}
+
+/****************************************
+			Mobile view
+****************************************/
+.mobileNav {
+  background-color: #323A45;
+  position: fixed;
+  top:0;
+  width:100%;
+}
+
+.mobileNav #myLinks {
+  display: none;
+}
+
+.mobileNav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+}
+
+.mobileNav a:hover {
+  background-color: #323A45;
+  color: #ffffff;
+}
+
+.mobileNav a.icon {
+  background: #323A45;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 15px;
+}
+.mobileNavPosition{
+	position:absolute;
+	top:80px;
+	width:100%;
+	color:#ffffff;
+	background-color:#323A45;
+}
+
+@media only screen and (max-width: 600px) {
+.desktopView{
+	display:block;
+}
+
+.mobileView{
+	display:none;
+}
+
+.box60 {
+  width: 100%;
+}
+
+.box40 {
+  width: 100%;
+}
+
+.boxes2 {
+  width: 100%;
+}
+.boxes3 {
+  width: 100%;
+}
+
+.bigBoxes3 {
+  width: 100%;
+}
+.mobileMargin10px{
+	margin:10px;
+}
+
+.mobileAlignC{
+	text-align:center;
+}
+
+.bodyContainer{
+	width: 100%;	
+}
+
+.full-height {
+  background-image: none;
+}
+h1{
+	font-size:24px;
+}
+h2{
+	font-size:20px;
+}
+.coverText{
+	font-size: 16px;
+}
+
+.topnav #myLinks {
+  display: none;
 }
 
 
-div label input {
-   margin-right:100px;
-}
-body {
-    font-family:sans-serif;
 }
 
-#ck-button {
-    margin:4px;
-    background-color:#EFEFEF;
-    border-radius:4px;
-    border:1px solid #D0D0D0;
-    overflow:auto;
-    float:left;
-}
 
-#ck-button:hover {
-    background:red;
-}
 
-#ck-button label {
-    float:left;
-    width:4.0em;
-}
-
-#ck-button label span {
-    text-align:center;
-    padding:3px 0px;
-    display:block;
-}
-
-#ck-button label input {
-    position:absolute;
-    top:-20px;
-}
-
-#ck-button input:checked + span {
-    background-color:#911;
-    color:#fff;
-}
